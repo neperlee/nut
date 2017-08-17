@@ -1,11 +1,6 @@
 /**
- *
- */
-
-/**
  * 32位无符号积运算，提高运算精度 （JS默认是有符号整数）
  */
-
 function multiply_uint32(a, b){
     var ah = (a >> 16) & 0xffff, al = a & 0xffff;
     var bh = (b >> 16) & 0xffff, bl = b & 0xffff;
@@ -15,7 +10,12 @@ function multiply_uint32(a, b){
 }
 
 
-
+/**
+ *
+ *
+ * @param str {string}
+ * @returns {number} hash number
+ */
 function murmur_hash2(str){
 
     var h, k, l = str.length;
